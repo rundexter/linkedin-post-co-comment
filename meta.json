@@ -4,23 +4,38 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "id",
+            "title":"Company ID"
+        },
+        {
+            "id": "updateKey",
+            "title":"Update Key"
+        },
+        {
+            "id": "comment",
+            "title":"Comment"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "id",
+            "title":"ID"
+        },
+        {
+            "id": "comment",
+            "title":"Comment"
+        },
+        {
+            "id": "updateKey",
+            "title":"Update Key"
+        },
+        {
+            "id": "updateUrl",
+            "title":"Update URL"
         }
-      */
     ],
+    "icon": "linkedin",
     "title": "LinkedIn Add Company Comment" /* Required.A display name for the module */
 }
