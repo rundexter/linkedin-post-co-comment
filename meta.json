@@ -38,7 +38,7 @@
     ],
     "providers": [{
         "name": "linkedin",
-        "scopes": ["rw_company_admin"]
+        "scopes": ["rw_company_admin", "r_fullprofile", "w_share"]
     }],
     "icon": "linkedin",
     "title": "LinkedIn Add Company Comment" /* Required.A display name for the module */
