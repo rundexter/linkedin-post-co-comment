@@ -36,6 +36,10 @@
             "title":"Update URL"
         }
     ],
+    "providers": [{
+        "name": "linkedin",
+        "scopes": ["rw_company_admin"]
+    }],
     "icon": "linkedin",
     "title": "LinkedIn Add Company Comment" /* Required.A display name for the module */
 }
