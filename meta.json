@@ -2,7 +2,6 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
         {
             "id": "id",
@@ -17,7 +16,6 @@
             "title":"Comment"
         }
     ],
-    //Required. Outputs the module emits.
     "outputs": [
         {
             "id": "id",
@@ -38,8 +36,10 @@
     ],
     "providers": [{
         "name": "linkedin",
-        "scopes": ["rw_company_admin", "r_fullprofile", "w_share"]
+        "scopes": [
+            "rw_company_admin"
+        ]
     }],
     "icon": "linkedin",
-    "title": "LinkedIn Add Company Comment" /* Required.A display name for the module */
+    "title": "LinkedIn Add Company Comment"
 }

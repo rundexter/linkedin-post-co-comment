@@ -22,9 +22,13 @@ module.exports = {
      */
     run: function(step, dexter) {
         var inputs = util.pickInputs(step, pickInputs),
+            validateErrors = util.checkValidateErrors(inputs, pickInputs);
             linkedIn = Linkedin.init(dexter.provider('linkedin').credentials('access_token')),
             apiURL = 'https://api.linkedin.com/v1/companies/' + inputs.id + '/updates/key=' + inputs.updateKey + '/update-comments-as-company/';
 
+        if (validateErrors)
+            return this.fail(validateErrors);
+        
         linkedIn.companies.createCall('POST', apiURL, {comment: inputs.comment}, function(err, data) {
             if (err || (data && data.errorCode !== undefined))
                 this.fail(err || (data.message || 'Error Code: '.concat(data.errorCode)));
