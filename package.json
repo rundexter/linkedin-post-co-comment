@@ -1,13 +1,17 @@
 {
-  "name": "linkedin-add-company-comment",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "author": "Alexander",
-  "license": "ISC",
-  "private": true,
-  "dependencies": {
-    "lodash": "^3.10.1",
-    "node-linkedin": "^0.5.3"
-  }
+   "name": "linkedin-add-company-comment",
+   "version": "0.0.1",
+   "description": "Submit a comment on a company update on behalf of a company, rather than a member",
+   "main": "index.js",
+   "author": "Run Dexter, Inc",
+   "license": "MIT",
+   "private": true,
+   "dependencies": {
+      "lodash": "^3.10.1",
+      "node-linkedin": "^0.5.3"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/rundexter/linkedin-post-co-comment"
+   }
 }
